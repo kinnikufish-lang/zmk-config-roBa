@@ -13,7 +13,17 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 };
-
+/ {
+    behaviors {
+        // エンコーダーの回転をマウススクロールに変換する定義
+        // tap-ms の値を小さくするとスクロールが速くなり、大きくするとゆっくりになります
+        inc_dec_msc: inc_dec_msc {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>; 
+        };
+    };
 / {
     combos { compatible = "zmk,combos"; };
 
