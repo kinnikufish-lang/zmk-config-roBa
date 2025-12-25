@@ -39,7 +39,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp TAB            &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
@@ -50,15 +50,15 @@
 &trans  &trans  &trans  &kp F3  &kp F2  &kp F7      &trans  &trans                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp W                                 &kp CARET        &kp AMPERSAND         &kp TILDE              &kp HASH              &kp AT_SIGN
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH   &to 6          &kp EQUAL  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION          &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp TILDE      &trans     &kp UNDER        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_PARENTHESIS  &kp LEFT_SHIFT
-&trans                      &kp KP_NUMBER_0  &trans           &trans           &trans      &kp TAB        &trans     &trans                                                                              &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp W                                 &kp CARET        &kp AMPERSAND         &kp TILDE              &kp HASH             [...]
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH   &to 6          &kp EQUAL  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION         [...]
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp TILDE      &trans     &kp UNDER        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_PARENTHESIS [...]
+&trans                      &kp KP_NUMBER_0  &trans           &trans           &trans      &kp TAB        &trans     &trans                                                                             [...]
             >;
         };
 
@@ -81,7 +81,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         SCROLL {
