@@ -38,8 +38,8 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LEFT_SHIFT &kp SPACE  &kp TAB            &lt 1 BACKSPACE  &lt 2 ENTER                               &kp RCTRL
             >;
 
-            // SCRL_UP/DOWNをPG_UP/DNに修正
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
@@ -51,7 +51,7 @@
             >;
             // ※左手親指の lt 1 があった位置のレイヤー1側に &kp DEL を配置しました（安全な削除）
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
 
         NUM {
@@ -71,7 +71,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
 
         MOUSE {
@@ -82,7 +82,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
 
         SCROLL {
@@ -102,7 +102,7 @@
 &kp LEFT_CONTROL   &trans          &trans          &trans          &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
     };
 };
