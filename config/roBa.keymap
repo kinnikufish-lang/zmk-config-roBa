@@ -17,8 +17,19 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+   behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
+
     keymap {
         compatible = "zmk,keymap";
+
+
 
         default_layer {
             bindings = <
@@ -28,7 +39,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LEFT_SHIFT  &kp SPACE  &kp TAB            &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
@@ -39,7 +50,7 @@
 &trans  &trans  &trans  &kp F3  &kp F2  &kp F7      &trans  &kp DEL                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -50,7 +61,7 @@
 &trans                      &kp KP_NUMBER_0  &trans           &trans           &trans      &kp TAB        &trans     &trans                                                                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -61,7 +72,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -72,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -92,7 +103,7 @@
 &kp LEFT_CONTROL  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
