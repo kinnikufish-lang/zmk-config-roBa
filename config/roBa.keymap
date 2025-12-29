@@ -39,7 +39,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LEFT_SHIFT  &kp SPACE  &kp TAB            &lt 1 BACKSPACE  &lt 2 ENTER                             &kp RCTRL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+        
         };
 
         FUNCTION {
@@ -50,7 +50,7 @@
 &trans  &trans  &trans  &kp F3  &kp F2  &kp F7      &trans  &kp DEL                                           &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            
         };
 
         NUM {
@@ -61,7 +61,7 @@
 &trans                      &kp KP_NUMBER_0  &trans           &trans           &trans      &kp TAB        &trans     &trans                                                                              &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            
         };
 
         ARROW {
@@ -72,7 +72,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            
         };
 
         MOUSE {
@@ -83,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            
         };
 
         SCROLL {
@@ -103,7 +103,7 @@
 &kp LEFT_CONTROL  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            
         };
     };
 };
