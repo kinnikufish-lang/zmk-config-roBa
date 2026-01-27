@@ -51,7 +51,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans   &trans    &kp UP_ARROW    &trans         &kp F12
 &trans  &trans  &trans  &trans  &trans  &to 6       &trans  &kp F8   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp INS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &kp F9    &kp PAGE_UP     &kp PAGE_DOWN  &kp INS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &kp F9    &kp PAGE_UP     &kp PAGE_DOWN  &kp F4
 &trans  &trans  &trans  &kp F3  &kp F2  &kp F7      &trans  &kp DEL                                           &trans
             >;
 
